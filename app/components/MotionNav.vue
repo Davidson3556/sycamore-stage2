@@ -25,7 +25,7 @@
             damping: 30,
           },
         }"
-        class="absolute h-10 md:h-12 bg-white rounded-full ]"
+        class="absolute h-10 md:h-12 bg-white rounded-full "
         :style="{
           top: '50%',
           transform: 'translateY(-50%)',

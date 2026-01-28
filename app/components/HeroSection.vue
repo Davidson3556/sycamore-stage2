@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="relative min-h-[600px] md:min-h-[500px] lg:min-h-screen flex items-center overflow-hidden bg-[#1F2334]"
+    class="relative min-h-[600px] md:min-h-[550px] lg:min-h-screen flex items-center overflow-hidden bg-[#1F2334]"
   >
     <div
       class="absolute inset-0 pointer-events-none hidden md:block"
