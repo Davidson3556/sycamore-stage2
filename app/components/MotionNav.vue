@@ -6,14 +6,13 @@
       aria-label="Main navigation"
     >
       <div
-        class="absolute inset-0 rounded-full bg-gradient-to-b from-neutral-600 to-neutral-900 ]"
+        class="absolute inset-0 rounded-full bg-gradient-to-b from-neutral-600 to-neutral-900"
       ></div>
 
       <div
-        class="absolute inset-[3px] rounded-full bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] "
+        class="absolute inset-[3px] rounded-full bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a]"
       ></div>
 
-      
       <div
         v-motion
         :initial="{ x: 0 }"
@@ -26,25 +25,25 @@
             damping: 30,
           },
         }"
-        class="absolute h-12 bg-white rounded-full ]"
+        class="absolute h-10 md:h-12 bg-white rounded-full ]"
         :style="{
-          top: '8px',
+          top: '50%',
+          transform: 'translateY(-50%)',
           left: '8px',
         }"
       ></div>
 
-      
       <button
         v-for="(tab, index) in tabs"
         :key="tab.id"
         :ref="(el) => setTabRef(el, index)"
-        class="relative px-7 py-3 rounded-full flex justify-center items-center gap-2 transition-colors z-10 cursor-pointer"
+        class="relative px-3 md:px-7 py-2 md:py-3 rounded-full flex justify-center items-center gap-1 md:gap-2 transition-colors z-10 cursor-pointer"
         :class="{ 'pointer-events-none': activeTab === tab.id }"
         @click="setActiveTab(tab.id, index)"
         :aria-current="activeTab === tab.id ? 'page' : undefined"
       >
         <span
-          class="text-center text-base font-medium font-sans leading-tight transition-all duration-300"
+          class="text-center text-xs md:text-base font-medium font-sans leading-tight transition-all duration-300 whitespace-nowrap"
           :class="
             activeTab === tab.id
               ? 'text-[#fff] font-semibold'
@@ -127,12 +126,12 @@ onMounted(() => {
 
 <style scoped>
 nav {
-  transform: scale(0.85);
+  max-width: calc(100vw - 2rem);
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-@media (min-width: 640px) {
-  nav {
-    transform: scale(1);
-  }
+nav::-webkit-scrollbar {
+  display: none;
 }
 </style>
