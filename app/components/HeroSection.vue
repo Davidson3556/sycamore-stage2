@@ -64,7 +64,11 @@
           >
             Financial Security<br />
             Made
-            <span class="relative inline-block min-w-[280px]">
+            <span
+              class="relative inline-block min-w-[280px]"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               <span
                 v-for="(word, index) in rotatingWords"
                 :key="word"
@@ -74,6 +78,7 @@
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-5'
                 "
+                :aria-hidden="currentWordIndex !== index"
               >
                 {{ word }}
                 <span
@@ -119,6 +124,7 @@
               Get Start For Free
             </UButton>
             <button
+              aria-label="Contact us - Let's talk"
               class="group flex items-center gap-3 text-white px-2 py-2 font-['DM_Sans'] font-medium text-base transition-colors duration-300"
             >
               <span>Let's talk</span>

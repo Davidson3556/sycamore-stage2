@@ -31,7 +31,11 @@
               </div>
             </div>
 
-            <div class="relative min-h-[120px] mb-6">
+            <div
+              class="relative min-h-[120px] mb-6"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               <p
                 v-for="(testimonial, index) in testimonials"
                 :key="testimonial.id + '-text'"
@@ -41,6 +45,7 @@
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-4'
                 "
+                :aria-hidden="activeIndex !== index"
               >
                 {{ testimonial.quote }}
               </p>
@@ -70,7 +75,14 @@
           </div>
         </div>
 
-        <div class="mt-8 h-1 bg-[#ECEFF1] rounded-full overflow-hidden">
+        <div
+          class="mt-8 h-1 bg-[#ECEFF1] rounded-full overflow-hidden"
+          role="progressbar"
+          :aria-valuenow="Math.round(progressPercent)"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-label="Testimonial progress"
+        >
           <div
             class="h-full bg-[#44C486] rounded-full transition-all"
             :style="{ width: progressPercent + '%' }"

@@ -75,6 +75,7 @@
                   v-model="email"
                   type="email"
                   placeholder="Enter your email address"
+                  aria-label="Email address"
                   class="w-full px-6 py-4 bg-transparent text-white placeholder-slate-400 focus:outline-none text-base"
                   required
                 />

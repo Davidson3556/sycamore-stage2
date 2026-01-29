@@ -7,10 +7,12 @@
     >
       <div
         class="absolute inset-0 rounded-full bg-gradient-to-b from-neutral-600 to-neutral-900"
+        aria-hidden="true"
       ></div>
 
       <div
         class="absolute inset-[3px] rounded-full bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a]"
+        aria-hidden="true"
       ></div>
 
       <div
@@ -25,13 +27,17 @@
             damping: 30,
           },
         }"
-        class="absolute h-10 md:h-12 bg-white rounded-full "
+        class="absolute h-10 md:h-12 rounded-full bg-gradient-to-b from-[#E8E8E8] via-[#C0C0C0] to-[#A0A0A0]"
         :style="{
           top: '50%',
           transform: 'translateY(-50%)',
           left: '8px',
         }"
       ></div>
+
+      <div class="hidden md:flex relative z-10 items-center pl-4 pr-2">
+        <img src="/logo.svg" alt="Staco - Home" class="h-8 w-auto" />
+      </div>
 
       <button
         v-for="(tab, index) in tabs"

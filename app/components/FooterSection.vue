@@ -54,6 +54,7 @@
             <div class="flex items-center gap-3">
               <a
                 href="#"
+                aria-label="Follow us on Facebook"
                 class="group w-10 h-10 rounded-full border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <UIcon
@@ -63,6 +64,7 @@
               </a>
               <a
                 href="#"
+                aria-label="Follow us on X (Twitter)"
                 class="group w-10 h-10 rounded-full border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <UIcon
@@ -72,6 +74,7 @@
               </a>
               <a
                 href="#"
+                aria-label="Connect with us on LinkedIn"
                 class="group w-10 h-10 rounded-full border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <UIcon
@@ -81,6 +84,7 @@
               </a>
               <a
                 href="#"
+                aria-label="Follow us on Instagram"
                 class="group w-10 h-10 rounded-full border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <UIcon
@@ -90,6 +94,7 @@
               </a>
               <a
                 href="#"
+                aria-label="Subscribe to our YouTube channel"
                 class="group w-10 h-10 rounded-full border border-white/10 hover:border-emerald-500/50 hover:bg-emerald-500/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
               >
                 <UIcon
