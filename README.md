@@ -13,8 +13,8 @@ A modern, animated financial solutions landing page built with Nuxt 4 and Vue 3.
 
 ## 🔗 Demo Link
 
-- **Live Demo:** 
-- **GitHub Repository:** 
+- **Live Demo:** - https://sycamore-stage2.vercel.app/
+- **GitHub Repository:** - https://github.com/Davidson3556/sycamore-stage2
 
 ---
 
